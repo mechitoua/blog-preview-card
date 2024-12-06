@@ -40,7 +40,7 @@ const formattedDate = format(post.publishDate, 'd MMM yyyy');
       </div>
     </header>
 
-    <main class="space-y-3 my-3">
+    <main class="space-y-3 my-3 pt-2">
       <h2 class="text-[24px] font-extrabold text-gray-950 leading-tight" itemprop="headline">
         <a
           href="#"
@@ -55,7 +55,7 @@ const formattedDate = format(post.publishDate, 'd MMM yyyy');
       </p>
     </main>
 
-    <footer class="mt-6 pt-6 border-gray-200 flex items-center gap-3">
+    <footer class="pt-3 border-gray-200 flex items-center gap-3">
       <img
         :src="post.author.avatarUrl"
         :alt="'Avatar of ' + post.author.name"
