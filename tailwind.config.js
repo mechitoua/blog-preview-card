@@ -5,11 +5,8 @@ export default {
     extend: {
       colors: {
         yellow: {
-          primary: 'hsl(47, 88%, 63%)',
-        },
-        gray: {
-          500: 'hsl(0, 0%, 42%)',
-          950: 'hsl(0, 0%, 7%)',
+          primary: '#F0CE49',
+          background: '#F5D04E',
         },
       },
       fontFamily: {

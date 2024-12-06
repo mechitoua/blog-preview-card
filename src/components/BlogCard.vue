@@ -11,7 +11,7 @@ const formattedDate = format(post.publishDate, 'd MMM yyyy');
 
 <template>
   <article
-    class="bg-white rounded-[20px] overflow-hidden max-w-sm font-figtree border border-gray-950 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.9)] p-6"
+    class="bg-white rounded-[15px] overflow-hidden w-[384px] font-figtree border border-gray-950 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.9)] p-6"
     itemscope
     itemtype="http://schema.org/BlogPosting">
     <header>
@@ -19,13 +19,13 @@ const formattedDate = format(post.publishDate, 'd MMM yyyy');
         <img
           :src="post.imageUrl"
           :alt="post.title"
-          class="w-full rounded-[10px] object-cover max-sm:h-[200px]"
+          class="w-full rounded-[10px] object-cover h-[200px]"
           itemprop="image" />
       </figure>
 
       <div class="space-y-3">
         <span
-          class="inline-block px-3 py-1 bg-yellow-primary text-black rounded-md max-sm:text-xs font-extrabold"
+          class="inline-block px-4 py-1 bg-yellow-primary text-gray-950 rounded-[4px] text-sm font-extrabold"
           role="tag"
           itemprop="articleSection">
           {{ post.category }}
@@ -33,7 +33,7 @@ const formattedDate = format(post.publishDate, 'd MMM yyyy');
 
         <time
           :datetime="post.publishDate.toISOString()"
-          class="block text-black max-sm:text-xs font-medium"
+          class="block text-gray-950 text-sm font-medium"
           itemprop="datePublished">
           Published {{ formattedDate }}
         </time>
@@ -41,7 +41,7 @@ const formattedDate = format(post.publishDate, 'd MMM yyyy');
     </header>
 
     <main class="space-y-3 my-3">
-      <h2 class="max-sm:text-xl text-2xl font-extrabold text-gray-950" itemprop="headline">
+      <h2 class="text-[24px] font-extrabold text-gray-950 leading-tight" itemprop="headline">
         <a
           href="#"
           class="block hover:text-yellow-primary transition-colors duration-200"
@@ -59,8 +59,8 @@ const formattedDate = format(post.publishDate, 'd MMM yyyy');
       <img
         :src="post.author.avatarUrl"
         :alt="'Avatar of ' + post.author.name"
-        class="w-10 h-10 rounded-full object-cover" />
-      <span class="font-extrabold text-md text-black" itemprop="author">
+        class="w-9 h-9 rounded-full object-cover" />
+      <span class="font-extrabold text-sm text-black" itemprop="author">
         {{ post.author.name }}
       </span>
     </footer>

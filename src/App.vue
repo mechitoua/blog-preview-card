@@ -19,7 +19,7 @@ const post: BlogPost = {
 </script>
 
 <template>
-  <main class="min-h-screen bg-yellow-300 flex items-center justify-center p-6">
+  <main class="min-h-screen bg-yellow-background flex items-center justify-center p-6">
     <BlogCard :post="post" />
   </main>
 </template>
