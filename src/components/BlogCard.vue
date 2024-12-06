@@ -14,19 +14,19 @@ const formattedDate = format(props.post.publishDate, 'd MMM yyyy');
   <article
     class="bg-white rounded-[20px] overflow-hidden max-w-sm font-figtree border border-gray-950 shadow-[8px_8px_0px_0px_rgba(0,0,0,0.9)] p-6">
     <div class="relative mb-6">
-      <img :src="post.imageUrl" :alt="post.title" class="w-full rounded-[10px] object-cover" />
+      <img :src="post.imageUrl" :alt="post.title" class="w-full rounded-[10px] object-cover max-sm:h-[200px]" />
     </div>
 
     <div class="space-y-3">
-      <span class="inline-block px-3 py-1 bg-yellow-primary text-black rounded-md text-sm font-extrabold">
+      <span class="inline-block px-3 py-1 bg-yellow-primary text-black rounded-md max-sm:text-xs font-extrabold">
         {{ post.category }}
       </span>
 
-      <time :datetime="post.publishDate.toISOString()" class="block text-black text-sm font-medium">
+      <time :datetime="post.publishDate.toISOString()" class="block text-black max-sm:text-xs font-medium">
         Published {{ formattedDate }}
       </time>
 
-      <h2 class="text-2xl font-extrabold text-gray-950 hover:text-yellow-primary transition-colors duration-200">
+      <h2 class="max-sm:text-xl text-2xl font-extrabold text-gray-950 hover:text-yellow-primary transition-colors duration-200">
         <a href="#" class="block">{{ post.title }}</a>
       </h2>
 

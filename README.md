@@ -1,6 +1,12 @@
 # Blog Preview Card Component
 
-![Blog Preview Card Component](/public/preview.jpg)
+<div align="center">
+
+| Desktop View | Mobile View |
+|-------------|-------------|
+| ![Desktop View](/public/card-desktop.png) | ![Mobile View](/public/card_mobile.png) |
+
+</div>
 
 A modern, responsive blog preview card component built with Vue 3, TypeScript, and Tailwind CSS. This component provides a beautiful way to display blog post previews with features like hover effects, responsive images, and proper typography.
 
